@@ -8,7 +8,7 @@ exports.currencies = (req, res) => {
 };
 
 exports.create = (req, res) => {
-    const currencyCode = req.body.currency_code;
+    const currencyCode = req.body.currency_id;
     switch (currencyCode) {
         case 'ETH':
             crypto.randomBytes(20, (err, buf) => {
